@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royame de l'Union Mondiale (RUM)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(120, 0, 0, 0.7), rgba(80, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .section-divider {
+            height: 100px;
+            background: linear-gradient(to bottom, #780000, #500000);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+        }
+        
+        .section-divider-reverse {
+            height: 100px;
+            background: linear-gradient(to bottom, #500000, #780000);
+            clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+        }
+        
+        .document-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .quote-mark {
+            font-size: 5rem;
+            line-height: 1;
+            color: rgba(184, 134, 11, 0.2);
+            position: absolute;
+            top: -20px;
+            left: -10px;
+        }
+    </style>
+</head>
+<body class="bg-amber-50 text-gray-800 font-serif">
+    <!-- Navigation -->
+    <nav class="bg-red-900 text-amber-100 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-crown text-amber-300 text-xl"></i>
+                <span class="font-bold text-xl">RUM</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-amber-300 transition">Le Royaume</a>
+                <a href="#constitution" class="hover:text-amber-300 transition">Constitution</a>
+                <a href="#institutions" class="hover:text-amber-300 transition">Institutions</a>
+                <a href="#decrees" class="hover:text-amber-300 transition">Décrets</a>
+                <a href="#contact" class="hover:text-amber-300 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-amber-100">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg text-white min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-t from-red-900 to-transparent opacity-80"></div>
+        <div class="container mx-auto px-4 text-center z-10">
+            <div class="mb-8">
+                <img src="https://via.placeholder.com/150" alt="Blason du RUM" class="mx-auto h-32 w-32 object-contain">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-amber-300">Royame de l'Union Mondiale</h1>
+            <p class="text-xl md:text-2xl mb-8 italic">"Un Dieu – Une Vie – Un Monde"</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#constitution" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center space-x-2">
+                    <i class="fas fa-search"></i>
+                    <span>Découvrir la Constitution</span>
+                </a>
+                <a href="#citizenship" class="bg-transparent hover:bg-red-800 border-2 border-amber-300 text-amber-300 font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center space-x-2">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Rejoindre le Royaume</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="section-divider"></div>
+
+    <!-- King's Message -->
+    <section id="message" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto relative">
+                <div class="quote-mark">"</div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-red-900">Message de Sa Majesté Bouyagui KEÏTA Ier</h2>
+                <blockquote class="text-xl md:text-2xl italic text-gray-700 mb-8 leading-relaxed">
+                    "Le Royaume de l'Union Mondiale est né du souffle de l'histoire, du rêve d'unité et du serment de paix universelle. Que chacun trouve ici un refuge de dignité, une mission de solidarité, et une voie vers la lumière. Soyez bénis, soyez unis, et que la vérité triomphe à jamais."
+                </blockquote>
+                <p class="text-right text-lg font-semibold text-amber-700">— Sa Majesté Bouyagui KEÏTA Ier</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider-reverse"></div>
+
+    <!-- About the Kingdom -->
+    <section id="about" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-red-900">Présentation du Royaume</h2>
+            <div class="max-w-4xl mx-auto text-lg mb-12 leading-relaxed">
+                <p class="mb-6">
+                    Le RUM est une monarchie constitutionnelle universelle, spirituelle et humanitaire. Il incarne l'idéal de paix mondiale, d'harmonie des peuples et de gouvernance éthique.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-red-800">
+                        <div class="text-red-800 mb-4">
+                            <i class="fas fa-balance-scale text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Justice universelle</h3>
+                        <p>Un système juridique équitable pour tous les peuples, transcendant les frontières nationales.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-amber-600">
+                        <div class="text-amber-600 mb-4">
+                            <i class="fas fa-praying-hands text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Souveraineté spirituelle</h3>
+                        <p>Reconnaissance du divin comme fondement de toute autorité et légitimité.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-red-800">
+                        <div class="text-red-800 mb-4">
+                            <i class="fas fa-hands-helping text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Dignité humaine</h3>
+                        <p>Respect inconditionnel de la valeur intrinsèque de chaque être humain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Constitution & Citizenship -->
+    <section id="constitution" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-red-900">Constitution & Citoyenneté</h2>
+            
+            <div class="max-w-4xl mx-auto mb-12">
+                <h3 class="text-2xl font-bold mb-6 text-amber-700">Documents Fondamentaux</h3>
+                <div class="space-y-4">
+                    <div class="document-card bg-amber-50 p-4 rounded-lg border-l-4 border-red-800 transition duration-300">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <i class="fas fa-file-pdf text-red-700 mr-2"></i>
+                                <span class="font-semibold">Constitution du RUM</span>
+                            </div>
+                            <a href="#" class="text-red-700 hover:text-red-900 font-medium">Télécharger PDF</a>
+                        </div>
+                    </div>
+                    <div class="document-card bg-amber-50 p-4 rounded-lg border-l-4 border-red-800 transition duration-300">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <i class="fas fa-file-pdf text-red-700 mr-2"></i>
+                                <span class="font-semibold">Version anglaise de la Constitution</span>
+                            </div>
+                            <a href="#" class="text-red-700 hover:text-red-900 font-medium">Télécharger PDF</a>
+                        </div>
+                    </div>
+                    <div class="document-card bg-amber-50 p-4 rounded-lg border-l-4 border-red-800 transition duration-300">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <i class="fas fa-file-pdf text-red-700 mr-2"></i>
+                                <span class="font-semibold">Accord RUM (anglais)</span>
+                            </div>
+                            <a href="#" class="text-red-700 hover:text-red-900 font-medium">Télécharger PDF</a>
+                        </div>
+                    </div>
+                    <div class="document-card bg-amber-50 p-4 rounded-lg border-l-4 border-red-800 transition duration-300">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <i class="fas fa-file-pdf text-red-700 mr-2"></i>
+                                <span class="font-semibold">Code de vie</span>
+                            </div>
+                            <a href="#" class="text-red-700 hover:text-red-900 font-medium">Télécharger PDF</a>
+                        </div>
+                    </div>
+                    <div class="document-card bg-amber-50 p-4 rounded-lg border-l-4 border-red-800 transition duration-300">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <i class="fas fa-file-pdf text-red-700 mr-2"></i>
+                                <span class="font-semibold">Charte RUM – FMI</span>
+                            </div>
+                            <a href="#" class="text-red-700 hover:text-red-900 font-medium">Télécharger PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="citizenship" class="max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold mb-6 text-amber-700">Citoyenneté</h3>
+                <p class="mb-8 text-lg leading-relaxed">
+                    Toute personne ou institution partageant les valeurs du Royaume peut faire allégeance et devenir sujet du RUM.
+                </p>
+                <a href="#contact" class="bg-red-800 hover:bg-red-900 text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center space-x-2">
+                    <i class="fas fa-envelope"></i>
+                    <span>Faire une demande de citoyenneté</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider-reverse"></div>
+
+    <!-- Royal Institutions -->
+    <section id="institutions" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-red-900">Institutions Royales</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-center mb-4">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 text-red-800 mb-3">
+                            <i class="fas fa-crown text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Le Roi</h3>
+                        <p class="text-gray-700">Souverain sacré, garant de la justice et protecteur des valeurs fondamentales du Royaume.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-center mb-4">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-amber-100 text-amber-800 mb-3">
+                            <i class="fas fa-mosque text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Chambre des Ayatollahs</h3>
+                        <p class="text-gray-700">400 membres du savoir et de la foi, conseillers spirituels et gardiens de la tradition.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-center mb-4">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 text-red-800 mb-3">
+                            <i class="fas fa-landmark text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Gouvernement Royal</h3>
+                        <p class="text-gray-700">Ministres nommés par le Roi pour administrer les affaires du Royaume selon ses directives.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-center mb-4">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-amber-100 text-amber-800 mb-3">
+                            <i class="fas fa-gavel text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Cour Royale</h3>
+                        <p class="text-gray-700">Justice infaillible rendue au nom du Roi, selon les principes de la Constitution.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-center mb-4">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 text-red-800 mb-3">
+                            <i class="fas fa-users text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Gouvernorats & Cercles</h3>
+                        <p class="text-gray-700">Structure administrative locale représentant le pouvoir royal dans toutes les régions.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-center mb-4">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-amber-100 text-amber-800 mb-3">
+                            <i class="fas fa-diploma text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Conseil des Sages</h3>
+                        <p class="text-gray-700">Assemblée consultative composée d'érudits et d'experts dans divers domaines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Royal Decrees -->
+    <section id="decrees" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-red-900">Décrets & Édits Royaux</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-amber-50 rounded-lg overflow-hidden">
+                    <thead class="bg-red-900 text-amber-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Document</th>
+                            <th class="py-3 px-4 text-left">Description</th>
+                            <th class="py-3 px-4 text-center">Lien</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-amber-200">
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Constitution du RUM</td>
+                            <td class="py-3 px-4">Loi fondamentale</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Version anglaise de la Constitution</td>
+                            <td class="py-3 px-4">Traduction officielle</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Accord RUM (anglais)</td>
+                            <td class="py-3 px-4">Accord international</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Charte RUM – FMI</td>
+                            <td class="py-3 px-4">Engagement financier</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Code de vie</td>
+                            <td class="py-3 px-4">Règles de conduite</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Édit n°0041</td>
+                            <td class="py-3 px-4">Statut des fonctionnaires</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Édit sur la Décoration</td>
+                            <td class="py-3 px-4">Ordres & médailles</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Édit sur la Sécurité</td>
+                            <td class="py-3 px-4">Police & Brigade spéciale</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Édit Palais Royal</td>
+                            <td class="py-3 px-4">Construction officielle</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Édit Création des Structures</td>
+                            <td class="py-3 px-4">Organigramme RUM</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Édit Création des Régions</td>
+                            <td class="py-3 px-4">Territoires administratifs</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Édit Création d'Institutions</td>
+                            <td class="py-3 px-4">Spécialisées : Justice, Culture...</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Édit Nouvelle Capitale</td>
+                            <td class="py-3 px-4">DIOMBA, capitale royale</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Édit Immunité diplomatique</td>
+                            <td class="py-3 px-4">Statut international</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Édit sur les Mosquées</td>
+                            <td class="py-3 px-4">Statut religieux</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Budget 2025</td>
+                            <td class="py-3 px-4">Plan financier annuel</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                        <tr class="hover:bg-amber-100 transition">
+                            <td class="py-3 px-4">Convertibilité du DRUM</td>
+                            <td class="py-3 px-4">Taux de change</td>
+                            <td class="py-3 px-4 text-center"><a href="#" class="text-red-700 hover:text-red-900"><i class="fas fa-file-pdf"></i> PDF</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="#" class="bg-red-800 hover:bg-red-900 text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center space-x-2">
+                    <i class="fas fa-file-archive"></i>
+                    <span>Télécharger tous les documents (ZIP)</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider-reverse"></div>
+
+    <!-- Economy & Currency -->
+    <section id="economy" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-red-900">Économie & Monnaie</h2>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                        <h3 class="text-2xl font-bold mb-4 text-amber-700">DRUM (Dollar du Royaume)</h3>
+                        <p class="mb-4">La monnaie officielle du Royaume de l'Union Mondiale, symbole de stabilité et de prospérité.</p>
+                        <div class="flex items-center">
+                            <div class="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center mr-4">
+                                <span class="text-xl font-bold text-red-800">DRUM</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Taux de change officiel</p>
+                                <p>1 DRUM = 1.25 USD</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-amber-700">Budget 2025</h3>
+                        <p class="mb-4">Plan financier annuel pour le développement du Royaume.</p>
+                        <a href="#" class="text-red-700 hover:text-red-900 font-medium inline-flex items-center">
+                            <i class="fas fa-file-pdf mr-2"></i>
+                            <span>Télécharger le budget (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-amber-700">Convertibilité DRUM</h3>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full">
+                                <thead>
+                                    <tr class="border-b border-amber-200">
+                                        <th class="py-2 px-4 text-left">Devise</th>
+                                        <th class="py-2 px-4 text-right">Taux</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-amber-100">
+                                        <td class="py-2 px-4">USD</td>
+                                        <td class="py-2 px-4 text-right">1.25</td>
+                                    </tr>
+                                    <tr class="border-b border-amber-100">
+                                        <td class="py-2 px-4">EUR</td>
+                                        <td class="py-2 px-4 text-right">1.10</td>
+                                    </tr>
+                                    <tr class="border-b border-amber-100">
+                                        <td class="py-2 px-4">GBP</td>
+                                        <td class="py-2 px-4 text-right">0.95</td>
+                                    </tr>
+                                    <tr class="border-b border-amber-100">
+                                        <td class="py-2 px-4">XOF</td>
+                                        <td class="py-2 px-4 text-right">750.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4">CNY</td>
+                                        <td class="py-2 px-4 text-right">8.75</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Projects & Goals -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-red-900">Projets & Objectifs</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <div class="bg-red-900 text-amber-100 p-6 rounded-lg shadow-lg">
+                    <div class="text-3xl mb-4">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Infrastructures</h3>
+                    <p>Développement de villes modèles, routes royales et bâtiments administratifs.</p>
+                </div>
+                
+                <div class="bg-amber-600 text-white p-6 rounded-lg shadow-lg">
+                    <div class="text-3xl mb-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Environnement</h3>
+                    <p>Protection des écosystèmes et promotion de technologies durables.</p>
+                </div>
+                
+                <div class="bg-red-800 text-amber-100 p-6 rounded-lg shadow-lg">
+                    <div class="text-3xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Éducation & Culture</h3>
+                    <p>Universités royales et préservation du patrimoine culturel mondial.</p>
+                </div>
+                
+                <div class="bg-amber-700 text-white p-6 rounded-lg shadow-lg">
+                    <div class="text-3xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Relations diplomatiques</h3>
+                    <p>Établissement de relations avec les nations et organisations internationales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider-reverse"></div>
+
+    <!-- Contact & Allegiance -->
+    <section id="contact" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-red-900">Contact & Allégeance</h2>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+                <div>
+                    <form class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="name">Nom</label>
+                            <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-800">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="firstname">Prénom</label>
+                            <input type="text" id="firstname" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-800">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="email">Email</label>
+                            <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-800">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="country">Pays</label>
+                            <select id="country" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-800">
+                                <option>Sélectionnez un pays</option>
+                                <option>Mali</option>
+                                <option>France</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="message">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-800"></textarea>
+                        </div>
+                        <button type="submit" class="bg-red-800 hover:bg-red-900 text-white font-bold py-3 px-6 rounded-lg transition duration-300 w-full">
+                            Envoyer
+                        </button>
+                    </form>
+                </div>
+                
+                <div>
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                        <h3 class="text-xl font-bold mb-4 text-amber-700">Email officiel</h3>
+                        <p class="mb-2">
+                            <a href="mailto:royaumeunionmondiale@contact.org" class="text-red-700 hover:text-red-900">royaumeunionmondiale@contact.org</a>
+                        </p>
+                        <p>
+                            <a href="mailto:rum@worldunionkingdom.com" class="text-red-700 hover:text-red-900">rum@worldunionkingdom.com</a>
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-amber-700">Siège diplomatique</h3>
+                        <p class="mb-2">Missabougou, Bamako</p>
+                        <p class="mb-2">Rue non codifiée, Bâtiment K/21, Porte NC 021</p>
+                        <p>TEL : 76 01-23- 67/66-62 -79-37</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-900 text-amber-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-300">Royaume de l'Union Mondiale</h3>
+                    <p class="italic">"Dieu est notre guide, la justice est notre loi, l'humanité est notre peuple."</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Liens rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#constitution" class="hover:text-amber-300 transition">Constitution</a></li>
+                        <li><a href="#citizenship" class="hover:text-amber-300 transition">Citoyenneté</a></li>
+                        <li><a href="#decrees" class="hover:text-amber-300 transition">Documents</a></li>
+                        <li><a href="#contact" class="hover:text-amber-300 transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Institutions</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-amber-300 transition">Le Roi</a></li>
+                        <li><a href="#" class="hover:text-amber-300 transition">Chambre des Ayatollahs</a></li>
+                        <li><a href="#" class="hover:text-amber-300 transition">Gouvernement Royal</a></li>
+                        <li><a href="#" class="hover:text-amber-300 transition">Cour Royale</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <span>royaume.union_mondiale62@yahoo.com</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-phone-alt mt-1"></i>
+                            <span>76 01-23- 67/66-62 -79-37</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>Missabougou, Bamako, rue non codifiée, Bâtiment K/21, Porte NC 021</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-amber-800 mt-8 pt-8 text-center">
+                <p>© 2023 Royaume de l'Union Mondiale. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=yasmin76/le-royaume-rum" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
